@@ -10,7 +10,9 @@ public class PriseDeDommage : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-
-        Destroy(gameObject, 1f);
+        if(other.tag =="Joueur")
+        {
+            Destroy(gameObject.transform.parent.transform.parent.gameObject);
+        }
     }
 }
