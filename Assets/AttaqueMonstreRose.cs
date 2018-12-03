@@ -9,8 +9,8 @@ public class AttaqueMonstreRose : MonoBehaviour
     public Transform bulletSpawn;
     public float speed;
     public float timeBetweenAttacks = 0.5f;
-    public int nombreDeVie = 2;
-    public int nombreDeVieMax = 2;
+    public float nombreDeVie = 10;
+    public float nombreDeVieMax = 10;
     float timer;
     float TempsDerniereAttaque;
     void Start()
