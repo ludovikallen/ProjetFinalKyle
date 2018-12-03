@@ -9,26 +9,30 @@ public class AttaqueMonstreRose : MonoBehaviour
     public Transform bulletSpawn;
     public float speed;
     public float timeBetweenAttacks = 0.5f;
+    public int nombreDeVie = 2;
+    public int nombreDeVieMax = 2;
     float timer;
     float TempsDerniereAttaque;
     void Start()
     {
         Joueur = GameObject.Find("Joueur");
-        transform.LookAt(Joueur.transform.position);
+        transform.LookAt(Joueur.transform.GetChild(0).transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Joueur.transform.position);
-        timer += Time.deltaTime;
-        transform.position += transform.forward * Time.deltaTime;
-        if (TempsDerniereAttaque + timeBetweenAttacks <= timer)
+        if(Joueur != null)
         {
-            TempsDerniereAttaque = timer; 
-            Fire();
+            transform.LookAt(Joueur.transform.GetChild(0).transform.position);
+            timer += Time.deltaTime;
+            transform.position += transform.forward * Time.deltaTime;
+            if (TempsDerniereAttaque + timeBetweenAttacks <= timer)
+            {
+                TempsDerniereAttaque = timer;
+                Fire();
+            }
         }
-        
     }
     void Fire()
     {

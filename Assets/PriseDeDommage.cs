@@ -12,7 +12,11 @@ public class PriseDeDommage : MonoBehaviour
     {
         if(other.tag =="Joueur")
         {
-            Destroy(gameObject.transform.parent.transform.parent.gameObject);
+            gameObject.transform.parent.transform.parent.GetComponent<AttaqueMonstreRose>().nombreDeVie -= 1;
+            if (gameObject.transform.parent.transform.parent.GetComponent<AttaqueMonstreRose>().nombreDeVie <= 0)
+            {
+                Destroy(gameObject.transform.parent.transform.parent.gameObject);
+            }
         }
     }
 }

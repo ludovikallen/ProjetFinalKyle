@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PriseDeDommageJoueur : MonoBehaviour
 {
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -15,7 +17,12 @@ public class PriseDeDommageJoueur : MonoBehaviour
     {
         if (other.tag == "Ennemi")
         {
-            Destroy(gameObject.transform.parent.gameObject);
+            animator.SetTrigger("Die");
+            Destroy(GetComponent<MouvementPersonnage>());
+            Destroy(GetComponent<RotationDepuisSouris>());
+            Destroy(GetComponent<Tirer>());
+            Destroy(GetComponent<Rigidbody>());
+            Destroy(transform.parent.gameObject, 3f);
         }
     }
 }

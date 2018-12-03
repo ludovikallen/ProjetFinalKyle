@@ -82,6 +82,7 @@
     <Compile Include="Assets\_Complete-Game\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Player\PlayerShooting.cs" />
     <Compile Include="Assets\AttaqueMonstreRose.cs" />
+    <Compile Include="Assets\BarreDeVie.cs" />
     <Compile Include="Assets\ControlleurCamera.cs" />
     <Compile Include="Assets\DetruireBalleSurHit.cs" />
     <Compile Include="Assets\FaireApparaitreMonstres.cs" />

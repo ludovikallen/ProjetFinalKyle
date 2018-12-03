@@ -9,8 +9,6 @@ public class FaireApparaitreMonstres : MonoBehaviour
     void Start()
     {
         Instantiate(monster, new Vector3(5, 0, 5), Quaternion.identity);
-        Instantiate(monster, new Vector3(-5, 0, -5), Quaternion.identity);
-
     }
 
     // Update is called once per frame
