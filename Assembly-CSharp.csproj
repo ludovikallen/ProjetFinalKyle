@@ -214,12 +214,6 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>

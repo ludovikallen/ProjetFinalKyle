@@ -542,7 +542,7 @@
     </member>
     <member name="P:UnityEngine.ParticleSystem.CollisionModule.quality">
       <summary>
-        <para>Specifies the accuracy of particle collisions against colliders in the scene.</para>
+        <para>Specifies the accuracy of particle collisions against colliders in the Scene.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.ParticleSystem.CollisionModule.radiusScale">
@@ -1118,7 +1118,7 @@
     </member>
     <member name="P:UnityEngine.ParticleSystem.LightsModule.light">
       <summary>
-        <para>Select what Light prefab you want to base your particle lights on.</para>
+        <para>Select what Light Prefab you want to base your particle lights on.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.ParticleSystem.LightsModule.maxLights">
@@ -1825,6 +1825,11 @@ The Noise Module allows you to apply turbulence to the movement of your particle
         <para>The animated velocity of the particle.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.ParticleSystem.Particle.axisOfRotation">
+      <summary>
+        <para>Mesh particles will rotate around this axis.</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.ParticleSystem.Particle.lifetime">
       <summary>
         <para>The lifetime of the particle.</para>
@@ -1940,6 +1945,11 @@ The Noise Module allows you to apply turbulence to the movement of your particle
         <para>Starts the Particle System.</para>
       </summary>
       <param name="withChildren">Play all child Particle Systems as well.</param>
+    </member>
+    <member name="M:UnityEngine.ParticleSystem.ResetPreMappedBufferMemory">
+      <summary>
+        <para>Reset the cache of reserved graphics memory used for efficient rendering of Particle Systems.</para>
+      </summary>
     </member>
     <member name="T:UnityEngine.ParticleSystem.RotationBySpeedModule">
       <summary>
@@ -4108,6 +4118,11 @@ The position stream is always enabled, and any attempts to remove it will be ign
     <member name="F:UnityEngine.ParticleSystemSubEmitterProperties.InheritColor">
       <summary>
         <para>When spawning new particles, multiply the start color by the color of the parent particles.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.ParticleSystemSubEmitterProperties.InheritDuration">
+      <summary>
+        <para>When spawning new particles, use the duration and age properties from the parent system, when sampling Main module curves in the Sub-Emitter.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.ParticleSystemSubEmitterProperties.InheritEverything">
