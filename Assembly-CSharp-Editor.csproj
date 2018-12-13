@@ -363,6 +363,9 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Library/PackageCache/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Unity/2018.3.0b12/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>

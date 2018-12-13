@@ -13,9 +13,10 @@ public class MenuEffects : MonoBehaviour
     //TO CHANGE MODE IN EDITOR
     public bool ActivateChangingSize;
     public bool ActivateRotate;
+    public bool ActivateCreditsMode;
     void Start()
     {
-        StartCoroutine(waiter());
+         
     }
     void Update()
     {
@@ -28,6 +29,11 @@ public class MenuEffects : MonoBehaviour
             Rotate();
         else
             transform.rotation = new Quaternion(0,0,0,0);
+
+        if (ActivateCreditsMode)
+            CreditsMode();
+        else
+            transform.rotation = new Quaternion(0, 0, 0, 0);
     }
     
     void Rotate()
@@ -48,9 +54,10 @@ public class MenuEffects : MonoBehaviour
             transform.localScale -= new Vector3(vitesseChangingSize * Time.deltaTime, vitesseChangingSize * Time.deltaTime, vitesseChangingSize * Time.deltaTime);
     }
 
-    IEnumerator waiter()
+    void CreditsMode()
     {
-        //Wait for 1 second
-        yield return new WaitForSeconds(1);
+        transform.Translate(Vector3.up * Time.deltaTime * 25);
+        if (transform.position.y > 1600)
+            transform.position = new Vector3(800, -50, 0);
     }
 }
