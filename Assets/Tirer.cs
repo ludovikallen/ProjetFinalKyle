@@ -7,6 +7,7 @@ public class Tirer : MonoBehaviour
     // Start is called before the first frame update
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
+    public AudioSource balle;
     public float speed;
     void Update()
     {
@@ -33,7 +34,7 @@ public class Tirer : MonoBehaviour
             bulletPrefab,
             bulletSpawn.position,
             bulletSpawn.rotation);
-
+        balle.Play();
         // Add velocity to the bullet
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * speed;
 
