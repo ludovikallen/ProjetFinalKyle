@@ -86,6 +86,9 @@
     <Compile Include="Assets\ControlleurCamera.cs" />
     <Compile Include="Assets\DetruireBalleSurHit.cs" />
     <Compile Include="Assets\FaireApparaitreMonstres.cs" />
+    <Compile Include="Assets\GestionnaireCharger.cs" />
+    <Compile Include="Assets\GestionnaireMenu.cs" />
+    <Compile Include="Assets\GestionnaireRetour.cs" />
     <Compile Include="Assets\MenuEffects.cs" />
     <Compile Include="Assets\MouvementPersonnage.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
@@ -178,6 +181,7 @@
     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\JsonDotNet\link.xml" />
     <None Include="Assets\Fonts\LuckiestGuy\FontLicense.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
@@ -432,6 +436,9 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>C:/Users/ludov/Documents/ProjetFinalKyle/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0a10/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
