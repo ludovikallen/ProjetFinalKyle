@@ -1,18 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/ScenesMenu/Load.unity
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scenes/SampleScene.unity
-=======
 - path: Assets/Scenes/ScenesMenu/Credits.unity
-=======
-- path: Assets/Scenes/ScenesMenu/SampleScene.unity
-=======
-- path: Assets/Scenes/ScenesMenu/MainMenu.unity
->>>>>>> Dev
->>>>>>> Dev
->>>>>>> Dev
   isLoaded: 1
   isActive: 1
