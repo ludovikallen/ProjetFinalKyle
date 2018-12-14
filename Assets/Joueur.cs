@@ -16,6 +16,8 @@ public class Joueur
         [JsonProperty]
         public int vitesseAttaque { get;  set; }
 
+        [JsonProperty]
+        public int niveauMax { get; set; }
         public Joueur()
         {
             

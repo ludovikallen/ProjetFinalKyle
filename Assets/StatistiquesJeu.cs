@@ -4,6 +4,7 @@ using UnityEngine;
 
 public static class StatistiquesJeu
 {
-    static Joueur joueurPrincipal;
-    
+    public static Joueur joueurPrincipal;
+    public static int monstresRestants=0;
+    public static int niveauCourant;
 }
