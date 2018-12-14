@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-16.3905086517334,"y":-4.825835227966309,"z":-0.29389238357543948},"rotation":{"x":-0.17878907918930055,"y":0.7006180286407471,"z":-0.18848909437656403,"w":-0.6645606160163879},"size":32.40798568725586,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":791.4696044921875,"y":430.75079345703127,"z":-781.1534423828125},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":37.30939483642578,"orthographic":true}
+>>>>>>> Dev
