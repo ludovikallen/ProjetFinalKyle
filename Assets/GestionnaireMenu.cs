@@ -13,7 +13,7 @@ public class GestionnaireMenu : MonoBehaviour
     void Awake()
     {
         buttons = GetComponentsInChildren<Button>();
-        buttons[0].onClick.AddListener(() => { SceneManager.LoadScene(2); });
+        buttons[0].onClick.AddListener(() => { SceneManager.LoadScene(1); });
         buttons[1].onClick.AddListener(() => {
             //LOADER
             SceneManager.LoadScene(2); });

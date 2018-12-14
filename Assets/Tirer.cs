@@ -19,6 +19,8 @@ public class Tirer : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            var feu = GetComponentInChildren<ParticleSystem>();
+            feu.Play();
             Fire();
         }
     }
