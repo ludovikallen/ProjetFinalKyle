@@ -8,13 +8,6 @@ using System.IO;
 
 public class Joueur
 {
-
-        public event EventHandler OnModifiée;
-        public event EventHandler OnDimensionXModifiée;
-        public event EventHandler OnDimensionYModifiée;
-        [JsonProperty]
-        public string Nom { get; set; }
-
         [JsonProperty]
         public int pointsVie { get; set; }
         [JsonProperty]
@@ -41,7 +34,7 @@ public class Joueur
             Joueur nouveauJoueur;
             using (StreamReader sr = new StreamReader(nomFichier))
             {
-            nouveauJoueur = JsonConvert.DeserializeObject<Joueur>(sr.ReadToEnd());
+                nouveauJoueur = JsonConvert.DeserializeObject<Joueur>(sr.ReadToEnd());
             }
             return nouveauJoueur;
         }

@@ -20,6 +20,17 @@ public class GestionnaireMenu : MonoBehaviour
         buttons[2].onClick.AddListener(() => { SceneManager.LoadScene(3); });
         buttons[3].onClick.AddListener(() => { SceneManager.LoadScene(4); });
         buttons[4].onClick.AddListener(() => { Application.Quit(); });
+
+
+        if (System.IO.File.Exists("save1.json"))
+            if (System.IO.File.Exists("save2.json"))
+                if (System.IO.File.Exists("save3.json"))
+                    buttons[0].interactable = false;
+
+        if (!System.IO.File.Exists("save1.json"))
+            if (!System.IO.File.Exists("save2.json"))
+                if (!System.IO.File.Exists("save3.json"))
+                    buttons[1].interactable = false;
     }
 
     // Update is called once per frame
