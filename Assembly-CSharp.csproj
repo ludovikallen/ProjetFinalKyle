@@ -86,10 +86,7 @@
     <Compile Include="Assets\ControlleurCamera.cs" />
     <Compile Include="Assets\DetruireBalleSurHit.cs" />
     <Compile Include="Assets\FaireApparaitreMonstres.cs" />
-    <Compile Include="Assets\GestionnaireCharger.cs" />
-    <Compile Include="Assets\GestionnaireMenu.cs" />
-    <Compile Include="Assets\GestionnaireRetour.cs" />
-    <Compile Include="Assets\MenuEffects.cs" />
+    <Compile Include="Assets\Joueur.cs" />
     <Compile Include="Assets\MouvementPersonnage.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -147,6 +144,10 @@
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
+    <Compile Include="Assets\ScriptsMenu\GestionnaireCharger.cs" />
+    <Compile Include="Assets\ScriptsMenu\GestionnaireMenu.cs" />
+    <Compile Include="Assets\ScriptsMenu\GestionnaireRetour.cs" />
+    <Compile Include="Assets\ScriptsMenu\MenuEffects.cs" />
     <Compile Include="Assets\Tirer.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
@@ -425,6 +426,9 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Unity/2018.3.0b12/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -436,9 +440,6 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/Ludo/Desktop/ProjetFinalKyle/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Unity/2018.3.0b12/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
