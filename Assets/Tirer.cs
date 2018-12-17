@@ -57,7 +57,7 @@ public class Tirer : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * speed;
 
         // Destroy the bullet after 2 seconds
-        Destroy(bullet, 1.0f);
+        Destroy(bullet, 2.0f);
     }
     void OnTriggerEnter(Collider other)
     {
@@ -68,7 +68,7 @@ public class Tirer : MonoBehaviour
             gameObject.transform.Find("Quad").transform.localScale = new Vector3(valeurX, 0.25f, 0.5f);
             if (joueur.pointsVie <= 0)
             {
-                animator.SetTrigger("Die");
+                animator.SetBool("mort",true);
                 Destroy(GetComponent<MouvementPersonnage>());
                 Destroy(GetComponent<RotationDepuisSouris>());
                 Destroy(GetComponent<Tirer>());

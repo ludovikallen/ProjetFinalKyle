@@ -14,6 +14,7 @@ public class AttaqueMonstreRose : MonoBehaviour
     public float Dommage = 5f;
     float timer;
     float TempsDerniereAttaque;
+    bool peuattaquer = false;
     void Start()
     {
         Joueur = GameObject.Find("Joueur");
@@ -23,9 +24,16 @@ public class AttaqueMonstreRose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!peuattaquer)
+        {
+            new WaitForSeconds(5);
+            peuattaquer = true;
+        }
         if(Joueur != null)
         {
+           
             transform.LookAt(Joueur.transform.GetChild(0).transform.position);
+           
             timer += Time.deltaTime;
             transform.position += transform.forward * Time.deltaTime;
             if (TempsDerniereAttaque + timeBetweenAttacks <= timer)
