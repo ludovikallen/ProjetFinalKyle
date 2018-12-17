@@ -10,6 +10,7 @@ public class Joueur
 {
         [JsonProperty]
         public int pointsVie { get; set; }
+
         [JsonProperty]
         public int pointsAttaque { get; set; }
 
@@ -17,10 +18,15 @@ public class Joueur
         public int vitesseAttaque { get;  set; }
 
         [JsonProperty]
-        public int niveauMax { get; set; }
+        public int niveau { get; set; }
+
+        [JsonProperty]
+        public int points { get; set; }
+
         public Joueur()
         {
-            
+            pointsVie = 10;
+            pointsAttaque = 1;
         }
 
         public void SérialiserVersSortie(TextWriter sortie)

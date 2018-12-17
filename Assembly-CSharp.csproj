@@ -146,9 +146,11 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
     <Compile Include="Assets\ScriptsMenu\GestionnaireMenu.cs" />
+    <Compile Include="Assets\ScriptsMenu\GestionnaireOptions.cs" />
     <Compile Include="Assets\ScriptsMenu\GestionnaireRetour.cs" />
     <Compile Include="Assets\ScriptsMenu\GestionnaireSauvegardes.cs" />
     <Compile Include="Assets\ScriptsMenu\MenuEffects.cs" />
+    <Compile Include="Assets\ScriptsMenu\MusiqueMenu.cs" />
     <Compile Include="Assets\StatistiquesJeu.cs" />
     <Compile Include="Assets\Tirer.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />

@@ -6,5 +6,5 @@ public static class StatistiquesJeu
 {
     public static Joueur joueurPrincipal;
     public static int monstresRestants=0;
-    public static int niveauCourant;
+    public static float volumeMusique = 1;
 }

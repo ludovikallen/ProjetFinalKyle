@@ -567,3 +567,10 @@ C:\Users\scatt\Downloads\ProjetFinalKyle\obj\Debug\Assembly-CSharp.csproj.CopyCo
 C:\Users\scatt\Downloads\ProjetFinalKyle\obj\Debug\Assembly-CSharp.dll
 C:\Users\scatt\Downloads\ProjetFinalKyle\obj\Debug\Assembly-CSharp.pdb
 >>>>>>> Dev
+C:\Users\Ludo\Desktop\ProjetFinalKyle\Temp\bin\Debug\Unity.Timeline.dll
+C:\Users\Ludo\Desktop\ProjetFinalKyle\Temp\bin\Debug\Unity.Timeline.Editor.dll
+C:\Users\Ludo\Desktop\ProjetFinalKyle\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\Ludo\Desktop\ProjetFinalKyle\Temp\bin\Debug\Unity.Timeline.Editor.pdb
+C:\Users\Ludo\Desktop\ProjetFinalKyle\Temp\bin\Debug\Unity.Timeline.pdb
+C:\Users\Ludo\Desktop\ProjetFinalKyle\Temp\bin\Debug\UnityEditor.SpatialTracking.pdb
+C:\Users\Ludo\Desktop\ProjetFinalKyle\Temp\bin\Debug\UnityEngine.SpatialTracking.pdb
