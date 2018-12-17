@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class RotationDepuisSouris : MonoBehaviour
 {
+    public float mouseSpeed = 3;
+
     void Update()
     {
-
         //Get the Screen positions of the object
         Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);
 

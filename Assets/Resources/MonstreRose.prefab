@@ -64,9 +64,10 @@ MonoBehaviour:
     type: 3}
   bulletSpawn: {fileID: 5880082160614927042}
   speed: 35
-  timeBetweenAttacks: 100
+  timeBetweenAttacks: 1
   nombreDeVie: 10
   nombreDeVieMax: 10
+  Dommage: 5
 --- !u!54 &8615730320620907592
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -382,7 +383,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &2541489711362880982

@@ -9,13 +9,13 @@ using System.IO;
 public class Joueur
 {
         [JsonProperty]
-        public int pointsVie { get; set; }
+        public float pointsVie { get; set; }
 
         [JsonProperty]
         public int pointsAttaque { get; set; }
 
         [JsonProperty]
-        public int vitesseAttaque { get;  set; }
+        public float vitesseAttaque { get;  set; }
 
         [JsonProperty]
         public int niveau { get; set; }
@@ -27,6 +27,7 @@ public class Joueur
         {
             pointsVie = 10;
             pointsAttaque = 1;
+            vitesseAttaque = 0.5f;
         }
 
         public void SérialiserVersSortie(TextWriter sortie)

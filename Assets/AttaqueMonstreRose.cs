@@ -11,6 +11,7 @@ public class AttaqueMonstreRose : MonoBehaviour
     public float timeBetweenAttacks = 0.5f;
     public float nombreDeVie = 10;
     public float nombreDeVieMax = 10;
+    public float Dommage = 5f;
     float timer;
     float TempsDerniereAttaque;
     void Start()
@@ -44,7 +45,7 @@ public class AttaqueMonstreRose : MonoBehaviour
 
         // Add velocity to the bullet
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * speed;
-
+        bullet.GetComponent<DommageDuTireur>().Dommage = Dommage;
         // Destroy the bullet after 2 seconds
         Destroy(bullet, 1.0f);
     }
