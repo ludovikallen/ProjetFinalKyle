@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/ScenesMenu/UpgradeScene.unity
+=======
+- path: Assets/Scenes/SampleScene.unity
+>>>>>>> DevLudoA
   isLoaded: 1
   isActive: 1

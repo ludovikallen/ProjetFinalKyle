@@ -7,8 +7,15 @@ public class DetruireBalleSurHit : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         var particule = gameObject.GetComponent<ParticleSystem>();
-        particule.Play();
+        if(particule != null)
+        {
+            particule.Play();
+            Destroy(gameObject, particule.main.duration - 0.10f);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         //Destroy this gameobject
-        Destroy(gameObject, particule.main.duration - 0.10f);
     }
 }

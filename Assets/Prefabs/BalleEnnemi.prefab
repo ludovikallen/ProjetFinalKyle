@@ -101,6 +101,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7942630948285246263}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: db806d7291353c84190ae6cf9e6e342b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -115,6 +116,8 @@ GameObject:
   - component: {fileID: 4693637205897890797}
   - component: {fileID: 7257760452109762383}
   - component: {fileID: 391861597856821637}
+  - component: {fileID: 6049162092061084641}
+  - component: {fileID: 5214432812272589723}
   m_Layer: 0
   m_Name: BalleEnnemi
   m_TagString: Ennemi
@@ -148,7 +151,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -166,3 +169,30 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6049162092061084641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698761705206412342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: db806d7291353c84190ae6cf9e6e342b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5214432812272589723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698761705206412342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 5fdc76219ae43924fb0fe1bbe400e916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dommage: 5

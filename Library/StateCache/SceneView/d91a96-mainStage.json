@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":727.54443359375,"y":435.0404052734375,"z":35.471473693847659},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":1947.2430419921875,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-0.5808868408203125,"y":2.7722043991088869,"z":-1.401270866394043},"rotation":{"x":-0.36943379044532778,"y":0.476017028093338,"z":-0.23012523353099824,"w":-0.7641785740852356},"size":18.755746841430665,"orthographic":false}
+>>>>>>> DevLudoA
