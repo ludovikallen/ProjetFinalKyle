@@ -6,7 +6,6 @@ public class PriseDeDommage : MonoBehaviour
 {
     void Start()
     {
-
     }
     void OnTriggerEnter(Collider other)
     {
@@ -16,6 +15,8 @@ public class PriseDeDommage : MonoBehaviour
             if (gameObject.transform.parent.transform.parent.GetComponent<AttaqueMonstreRose>().nombreDeVie <= 0)
             {
                 Destroy(gameObject.transform.parent.transform.parent.gameObject);
+                StatistiquesJeu.monstresRestants--;
+                StatistiquesJeu.joueurPrincipal.points += 50;
             }
         }
     }

@@ -13,7 +13,6 @@ public class BarreDeVie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = (gameObject.transform.parent.GetComponent<AttaqueMonstreRose>().nombreDeVie / gameObject.transform.parent.GetComponent<AttaqueMonstreRose>().nombreDeVieMax) * 5f;
-        gameObject.transform.localScale = new Vector3(x, 0.5f, 1f);
+     
     }
 }

@@ -23,6 +23,7 @@ public class Joueur
             pointsVie = 10;
             pointsAttaque = 1;
             vitesseAttaque = 0.5f;
+            niveau = 1;
         }
 
         public void SérialiserVersSortie(TextWriter sortie)

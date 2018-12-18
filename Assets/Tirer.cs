@@ -10,16 +10,14 @@ public class Tirer : MonoBehaviour
     public Transform bulletSpawn;
     public AudioSource balle;
     public float speed;
-    public Joueur joueur;
-    float NombreDeVie;
+    public float NombreDeVie;
     float timer;
     float TempsDerniereAttaque;
     Animator animator;
     private void Start()
     {
         animator = GetComponent<Animator>();
-        joueur = new Joueur();
-        NombreDeVie = joueur.pointsVie;
+        NombreDeVie = StatistiquesJeu.joueurPrincipal.pointsVie;
     }
 
     void Update()
@@ -34,7 +32,7 @@ public class Tirer : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (TempsDerniereAttaque + joueur.vitesseAttaque <= timer)
+            if (TempsDerniereAttaque + StatistiquesJeu.joueurPrincipal.vitesseAttaque <= timer)
             {
                 var feu = GetComponentInChildren<ParticleSystem>();
                 feu.Play();
@@ -64,21 +62,12 @@ public class Tirer : MonoBehaviour
     {
         if (other.tag == "Ennemi")
         {
-            joueur.pointsVie -= other.GetComponent<DommageDuTireur>().Dommage;
-            float valeurX = joueur.pointsVie / NombreDeVie * 2.5f;
+            NombreDeVie -= other.GetComponent<DommageDuTireur>().Dommage;
+            float valeurX =  NombreDeVie / StatistiquesJeu.joueurPrincipal.pointsVie * 2.5f;
             gameObject.transform.Find("Quad").transform.localScale = new Vector3(valeurX, 0.25f, 0.5f);
-            if (joueur.pointsVie <= 0)
+            if (NombreDeVie <= 0)
             {
-                animator.SetBool("Mort",true);
-                Destroy(GetComponent<MouvementPersonnage>());
-                Destroy(GetComponent<RotationDepuisSouris>());
-                Destroy(GetComponent<Tirer>());
-                Destroy(GetComponent<Rigidbody>());
-                Destroy(transform.parent.gameObject, 3f);
-                while(!animator.isActiveAndEnabled)
-                {
-
-                }
+             
                 SceneManager.LoadScene(5);
             }
 
