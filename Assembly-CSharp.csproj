@@ -149,6 +149,7 @@
     <Compile Include="Assets\ScriptsMenu\GestionnaireOptions.cs" />
     <Compile Include="Assets\ScriptsMenu\GestionnaireRetour.cs" />
     <Compile Include="Assets\ScriptsMenu\GestionnaireSauvegardes.cs" />
+    <Compile Include="Assets\ScriptsMenu\GestionnaireUpgrades.cs" />
     <Compile Include="Assets\ScriptsMenu\MenuEffects.cs" />
     <Compile Include="Assets\ScriptsMenu\MusiqueMenu.cs" />
     <Compile Include="Assets\StatistiquesJeu.cs" />

@@ -7,8 +7,6 @@ public class GestionnaireSauvegardes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-// GameObject.FindGameObjectWithTag("Music").GetComponent<MusiqueMenu>().PlayMusic();
         VerifierEtatSauvegarde("1");
         VerifierEtatSauvegarde("2");
         VerifierEtatSauvegarde("3");
@@ -38,6 +36,7 @@ public class GestionnaireSauvegardes : MonoBehaviour
             {
                 StatistiquesJeu.joueurPrincipal = Joueur.DésérialiserFichier("save1.json");
                 GameObject.FindGameObjectWithTag("Music").GetComponent<MusiqueMenu>().StopMusic();
+                StatistiquesJeu.nomSauvegarde = "save" + numSauvegarde + ".json";
                 SceneManager.LoadScene(1);
             });
         }
@@ -50,6 +49,7 @@ public class GestionnaireSauvegardes : MonoBehaviour
                 Joueur nouveauJoueur = new Joueur();
                 nouveauJoueur.SérialiserVersSortie(new StreamWriter("save" + numSauvegarde + ".json"));
                 GameObject.FindGameObjectWithTag("Music").GetComponent<MusiqueMenu>().StopMusic();
+                StatistiquesJeu.nomSauvegarde = "save" + numSauvegarde + ".json";
                 SceneManager.LoadScene(1);
             });
         }
