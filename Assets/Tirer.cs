@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tirer : MonoBehaviour
 {
@@ -57,7 +58,7 @@ public class Tirer : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * speed;
 
         // Destroy the bullet after 2 seconds
-        Destroy(bullet, 2.0f);
+        Destroy(bullet, 4.0f);
     }
     void OnTriggerEnter(Collider other)
     {
@@ -68,12 +69,17 @@ public class Tirer : MonoBehaviour
             gameObject.transform.Find("Quad").transform.localScale = new Vector3(valeurX, 0.25f, 0.5f);
             if (joueur.pointsVie <= 0)
             {
-                animator.SetBool("mort",true);
+                animator.SetBool("Mort",true);
                 Destroy(GetComponent<MouvementPersonnage>());
                 Destroy(GetComponent<RotationDepuisSouris>());
                 Destroy(GetComponent<Tirer>());
                 Destroy(GetComponent<Rigidbody>());
                 Destroy(transform.parent.gameObject, 3f);
+                while(!animator.isActiveAndEnabled)
+                {
+
+                }
+                SceneManager.LoadScene(5);
             }
 
         }
