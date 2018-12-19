@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":87.9126968383789,"y":23.116867065429689,"z":-23.119529724121095},"rotation":{"x":0.2532067596912384,"y":-0.4821266233921051,"z":-0.14786995947360993,"w":-0.8255754113197327},"size":65.01116943359375,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":15.710236549377442,"y":17.18449592590332,"z":-1.665452003479004},"rotation":{"x":-0.1494213342666626,"y":0.720991313457489,"z":-0.1641155332326889,"w":-0.6564381122589111},"size":3.5633068084716799,"orthographic":false}
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":727.54443359375,"y":435.0404052734375,"z":35.471473693847659},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":1947.2430419921875,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-0.5808868408203125,"y":2.7722043991088869,"z":-1.401270866394043},"rotation":{"x":-0.36943379044532778,"y":0.476017028093338,"z":-0.23012523353099824,"w":-0.7641785740852356},"size":18.755746841430665,"orthographic":false}
+>>>>>>> DevLudoA
+>>>>>>> MenuLudo
