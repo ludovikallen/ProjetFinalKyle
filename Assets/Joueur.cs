@@ -27,7 +27,7 @@ public class Joueur
             pointsAttaque = 2;
             vitesseAttaque = 0.5f;
             niveau = 1;
-            points = 3000;
+            points = 0;
             arme = "Normal gun";
     }
 

@@ -20,16 +20,27 @@ public class GestionnaireJeu : MonoBehaviour
         StatistiquesJeu.monstresRestants = StatistiquesJeu.joueurPrincipal.niveau + 1;
         for (int i = 0; i < StatistiquesJeu.monstresRestants; i++)
         {
-            //  MontresaSpawn = Random.Range(1, 3);
-            //  if (MontresaSpawn == 1)
-            monstre = Instantiate(Resources.Load("Prefabs/MonstreRose"), new Vector3(Random.Range(-40, +40), 0, Random.Range(-40, 40)), Quaternion.identity) as GameObject;
-            monstre.GetComponent<AttaqueMonstreRose>().Dommage = StatistiquesJeu.joueurPrincipal.niveau;
-            monstre.GetComponent<AttaqueMonstreRose>().nombreDeVieMax = StatistiquesJeu.joueurPrincipal.niveau + 3;
-            monstre.GetComponent<AttaqueMonstreRose>().nombreDeVie = StatistiquesJeu.joueurPrincipal.niveau + 3;
-            monstre.GetComponent<AttaqueMonstreRose>().speed = StatistiquesJeu.joueurPrincipal.niveau + 35;
-            monstre.GetComponent<AttaqueMonstreRose>().timeBetweenAttacks = 5F - ((float)StatistiquesJeu.joueurPrincipal.niveau / 5f);
+              ////MontresaSpawn = Random.Range(1, 3);
+             //if (MontresaSpawn == 1)
+            //{
+                monstre = Instantiate(Resources.Load("Prefabs/MonstreRose"), new Vector3(Random.Range(-40, +40), 0, Random.Range(-40, 40)), Quaternion.identity) as GameObject;
+                monstre.GetComponent<AttaqueMonstreRose>().Dommage = StatistiquesJeu.joueurPrincipal.niveau / 2;
+                monstre.GetComponent<AttaqueMonstreRose>().nombreDeVieMax = StatistiquesJeu.joueurPrincipal.niveau + 1;
+                monstre.GetComponent<AttaqueMonstreRose>().nombreDeVie = StatistiquesJeu.joueurPrincipal.niveau + 1;
+                monstre.GetComponent<AttaqueMonstreRose>().speed = StatistiquesJeu.joueurPrincipal.niveau + 35;
+                monstre.GetComponent<AttaqueMonstreRose>().timeBetweenAttacks = 5F - ((float)StatistiquesJeu.joueurPrincipal.niveau / 5f);
+            //}
+         
             //  if (MontresaSpawn == 2)
-            //      Instantiate(Resources.Load("Prefabs/MonstreJaune"), new Vector3(Random.Range(-40, +40), 0, Random.Range(-40, 40)), Quaternion.identity);
+            //{
+            //    monstre = Instantiate(Resources.Load("Prefabs/MonstreBlue"), new Vector3(Random.Range(-40, +40), 0, Random.Range(-40, 40)), Quaternion.identity) as GameObject;
+            //   monstre.GetComponent<AttaqueMonstreRose>().Dommage = StatistiquesJeu.joueurPrincipal.niveau / 2;
+            // monstre.GetComponent<AttaqueMonstreRose>().nombreDeVieMax = StatistiquesJeu.joueurPrincipal.niveau + 1;
+            //    monstre.GetComponent<AttaqueMonstreRose>().nombreDeVie = StatistiquesJeu.joueurPrincipal.niveau + 1;
+            //   monstre.GetComponent<AttaqueMonstreRose>().speed = StatistiquesJeu.joueurPrincipal.niveau + 35;
+            // monstre.GetComponent<AttaqueMonstreRose>().timeBetweenAttacks = 5F - ((float)StatistiquesJeu.joueurPrincipal.niveau / 5f);
+            //}
+            
 
         }
     }

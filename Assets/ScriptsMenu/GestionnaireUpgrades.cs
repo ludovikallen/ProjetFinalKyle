@@ -10,7 +10,7 @@ public class GestionnaireUpgrades : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StatistiquesJeu.joueurPrincipal.niveau++;
+       // StatistiquesJeu.joueurPrincipal.niveau++;
         AfficherVariables();
         VerifierCouts();
         GameObject.Find("arme_DDOWN").GetComponent<Dropdown>().value = GameObject.Find("arme_DDOWN").GetComponent<Dropdown>().options.FindIndex((i) => { return i.text.Equals(StatistiquesJeu.joueurPrincipal.arme); });
