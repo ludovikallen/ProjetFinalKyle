@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
+using UnityEngine;
 public class AttaqueMonstreRose : MonoBehaviour
 {
     GameObject Joueur;
@@ -14,6 +14,7 @@ public class AttaqueMonstreRose : MonoBehaviour
     public float Dommage = 5f;
     float timer;
     float TempsDerniereAttaque;
+    bool peuattaquer = false;
     void Start()
     {
         Joueur = GameObject.Find("Joueur");
@@ -23,9 +24,12 @@ public class AttaqueMonstreRose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+     
         if(Joueur != null)
         {
+           
             transform.LookAt(Joueur.transform.GetChild(0).transform.position);
+           
             timer += Time.deltaTime;
             transform.position += transform.forward * Time.deltaTime;
             if (TempsDerniereAttaque + timeBetweenAttacks <= timer)
@@ -33,7 +37,11 @@ public class AttaqueMonstreRose : MonoBehaviour
                 TempsDerniereAttaque = timer;
                 Fire();
             }
+
         }
+        float x = nombreDeVie / nombreDeVieMax * 5f;
+     
+        gameObject.transform.Find("Quad").localScale = new Vector3(x, 0.5f, 1f);
     }
     void Fire()
     {
@@ -47,6 +55,6 @@ public class AttaqueMonstreRose : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * speed;
         bullet.GetComponent<DommageDuTireur>().Dommage = Dommage;
         // Destroy the bullet after 2 seconds
-        Destroy(bullet, 1.0f);
+        Destroy(bullet, 4.0f);
     }
 }

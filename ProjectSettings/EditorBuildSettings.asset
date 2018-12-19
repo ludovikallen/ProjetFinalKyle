@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScenesMenu/Credits.unity
     guid: a53ca9438042f394e9692525e3fa21f9
+  - enabled: 1
+    path: Assets/Scenes/ScenesMenu/Mort.unity
+    guid: 880539d328d6a494f9cabdeca61d04b8
+  - enabled: 1
+    path: Assets/Scenes/ScenesMenu/UpgradeScene.unity
+    guid: 7efc26e5e93190c44b0c35fe4d6df8de
   m_configObjects: {}

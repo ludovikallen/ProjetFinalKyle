@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tirer : MonoBehaviour
 {
@@ -9,16 +10,14 @@ public class Tirer : MonoBehaviour
     public Transform bulletSpawn;
     public AudioSource balle;
     public float speed;
-    public Joueur joueur;
-    float NombreDeVie;
+    public float NombreDeVie;
     float timer;
     float TempsDerniereAttaque;
     Animator animator;
     private void Start()
     {
         animator = GetComponent<Animator>();
-        joueur = new Joueur();
-        NombreDeVie = joueur.pointsVie;
+        NombreDeVie = StatistiquesJeu.joueurPrincipal.pointsVie;
     }
 
     void Update()
@@ -33,7 +32,7 @@ public class Tirer : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (TempsDerniereAttaque + joueur.vitesseAttaque <= timer)
+            if (TempsDerniereAttaque + StatistiquesJeu.joueurPrincipal.vitesseAttaque <= timer)
             {
                 var feu = GetComponentInChildren<ParticleSystem>();
                 feu.Play();
@@ -57,23 +56,19 @@ public class Tirer : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * speed;
 
         // Destroy the bullet after 2 seconds
-        Destroy(bullet, 1.0f);
+        Destroy(bullet, 4.0f);
     }
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Ennemi")
         {
-            joueur.pointsVie -= other.GetComponent<DommageDuTireur>().Dommage;
-            float valeurX = joueur.pointsVie / NombreDeVie * 2.5f;
+            NombreDeVie -= other.GetComponent<DommageDuTireur>().Dommage;
+            float valeurX =  NombreDeVie / StatistiquesJeu.joueurPrincipal.pointsVie * 2.5f;
             gameObject.transform.Find("Quad").transform.localScale = new Vector3(valeurX, 0.25f, 0.5f);
-            if (joueur.pointsVie <= 0)
+            if (NombreDeVie <= 0)
             {
-                animator.SetTrigger("Die");
-                Destroy(GetComponent<MouvementPersonnage>());
-                Destroy(GetComponent<RotationDepuisSouris>());
-                Destroy(GetComponent<Tirer>());
-                Destroy(GetComponent<Rigidbody>());
-                Destroy(transform.parent.gameObject, 3f);
+             
+                SceneManager.LoadScene(5);
             }
 
         }
