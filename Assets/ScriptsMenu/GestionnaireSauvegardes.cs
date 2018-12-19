@@ -30,8 +30,8 @@ public class GestionnaireSauvegardes : MonoBehaviour
                 SceneManager.LoadScene(2);
             });
             Joueur joueur = Joueur.DésérialiserFichier("save" + numSauvegarde + ".json");
-            GameObject.Find("pointsVie" + numSauvegarde + "_TXT").GetComponent<Text>().text = joueur.pointsVie.ToString();
-            GameObject.Find("pointsAttaque" + numSauvegarde + "_TXT").GetComponent<Text>().text = joueur.pointsAttaque.ToString();
+            GameObject.Find("points" + numSauvegarde + "_TXT").GetComponent<Text>().text = joueur.points.ToString();
+            GameObject.Find("niveau" + numSauvegarde + "_TXT").GetComponent<Text>().text = joueur.niveau.ToString();
             GameObject.Find("save" + numSauvegarde + "_PNL").GetComponent<Button>().onClick.AddListener(() =>
             {
                 StatistiquesJeu.joueurPrincipal = Joueur.DésérialiserFichier("save1.json");

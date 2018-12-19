@@ -23,12 +23,18 @@ public class Joueur
         [JsonProperty]
         public int points { get; set; }
 
-        public Joueur()
+        [JsonProperty]
+        public string arme { get; set; }
+
+    public Joueur()
         {
             pointsVie = 10;
-            pointsAttaque = 1;
+            pointsAttaque = 2;
             vitesseAttaque = 0.5f;
-        }
+            niveau = 1;
+            points = 3000;
+            arme = "Normal gun";
+    }
 
         public void SérialiserVersSortie(TextWriter sortie)
         {
