@@ -10,17 +10,19 @@ public class GestionnaireUpgrades : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // StatistiquesJeu.joueurPrincipal.niveau++;
+        // StatistiquesJeu.joueurPrincipal.niveau++;
+        GameObject.FindGameObjectWithTag("Music").GetComponent<MusiqueMenu>().PlayMusic();
         AfficherVariables();
         VerifierCouts();
         GameObject.Find("arme_DDOWN").GetComponent<Dropdown>().value = GameObject.Find("arme_DDOWN").GetComponent<Dropdown>().options.FindIndex((i) => { return i.text.Equals(StatistiquesJeu.joueurPrincipal.arme); });
         GameObject.Find("ContinueGame_BTN").GetComponent<Button>().onClick.AddListener(() => {
             StatistiquesJeu.joueurPrincipal.SérialiserVersSortie(new StreamWriter(StatistiquesJeu.nomSauvegarde));
             SceneManager.LoadScene(1);
+            GameObject.FindGameObjectWithTag("Music").GetComponent<MusiqueMenu>().StopMusic();
         });
         GameObject.Find("SaveAndQuitGame_BTN").GetComponent<Button>().onClick.AddListener(() => {
             StatistiquesJeu.joueurPrincipal.SérialiserVersSortie(new StreamWriter(StatistiquesJeu.nomSauvegarde));
-            Application.Quit();
+            SceneManager.LoadScene(0);
         });
         GameObject.Find("UpgradeHP_BTN").GetComponent<Button>().onClick.AddListener(() => {
             StatistiquesJeu.joueurPrincipal.points -= 100;

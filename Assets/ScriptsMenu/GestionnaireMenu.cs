@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 public class GestionnaireMenu : MonoBehaviour
 {
     Button[] buttons;
@@ -21,7 +22,10 @@ public class GestionnaireMenu : MonoBehaviour
             GameObject.FindGameObjectWithTag("Music").GetComponent<MusiqueMenu>().StopMusic();
             SceneManager.LoadScene(4);
         });
-        buttons[4].onClick.AddListener(() => { Application.Quit(); });
+        buttons[4].onClick.AddListener(() => {
+            Application.Quit();
+            UnityEditor.EditorApplication.isPlaying = false;
+        });
 
 
         if (System.IO.File.Exists("save1.json"))
